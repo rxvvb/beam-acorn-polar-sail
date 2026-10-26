@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Торговый Путь — строительные материалы | Владивосток</title>
+  <meta name="description" content="Керамогранит 60×120, фибра HENDIX, профили, MAPEI. Склады во Владивостоке, доставка по Дальнему Востоку." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+          },
+          colors: {
+            ink: '#1c1712',
+            'ink-soft': '#3a322a',
+            paper: '#f3eee6',
+            cream: '#faf7f2',
+            muted: '#6f675c',
+            line: '#e4d9cb',
+            copper: '#c2512a',
+            'copper-deep': '#8e3818',
+            sand: '#e7d7c3',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #f3eee6; color: #1c1712; }
+    ::selection { background: #e7d7c3; color: #1c1712; }
+    @keyframes rise { from { transform: translateY(14px); opacity: 0; } to { transform: none; opacity: 1; } }
+    @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @keyframes ken { from { transform: scale(1.08); } to { transform: scale(1); } }
+    .anim-rise { animation: rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both; }
+    .ken { animation: ken 1.6s cubic-bezier(0.16, 1, 0.3, 1) both; }
+    .marquee-track { animation: drift 42s linear infinite; }
+    .marquee:hover .marquee-track { animation-play-state: paused; }
+    .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    @media (prefers-reduced-motion: reduce) {
+      .anim-rise, .ken, .marquee-track { animation: none !important; }
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-30 border-b border-line bg-paper/90 backdrop-blur-md">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5">
+      <a href="#" class="font-display text-xl tracking-tight md:text-2xl">Торговый Путь</a>
+      <nav class="hidden items-center gap-6 text-sm lg:flex">
+        <a href="#catalog" class="hover:text-copper-deep">Каталог</a>
+        <a href="#hendix" class="hover:text-copper-deep">Фибра</a>
+        <a href="#services" class="hover:text-copper-deep">Услуги</a>
+        <a href="#reviews" class="hover:text-copper-deep">Отзывы</a>
+        <a href="#contact" class="hover:text-copper-deep">Контакты</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="tel:+79149644886" class="hidden items-center gap-2 text-sm md:inline-flex">
+          <svg class="size-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          +7 (914) 964-48-86
+        </a>
+        <button type="button" id="btn-tray-desktop" class="relative hidden h-10 items-center rounded-full bg-ink px-4 text-sm text-cream lg:inline-flex">
+          Заявка <span id="tray-count-desktop" class="ml-1.5 hidden rounded-full bg-copper px-1.5 text-xs"></span>
+        </button>
+        <button type="button" id="btn-menu" class="grid h-11 w-11 place-items-center lg:hidden" aria-label="Меню">
+          <svg class="size-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-2 md:py-20 lg:gap-12">
+        <div class="anim-rise flex flex-col justify-center">
+          <p class="text-sm tracking-widest text-copper-deep uppercase">Владивосток · Дальний Восток</p>
+          <h1 class="mt-3 font-display text-4xl leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
+            Строительные материалы<br />для серьёзных объектов
+          </h1>
+          <p class="mt-5 max-w-md text-base text-muted md:text-lg">
+            Керамогранит 60×120, стальная фибра HENDIX, профили швов, MAPEI и комплектация объектов — со склада и под заказ.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#catalog" class="inline-flex h-12 items-center rounded-full bg-ink px-6 text-sm font-medium text-cream">Смотреть каталог</a>
+            <a href="https://max.ru/" target="_blank" rel="noreferrer" class="inline-flex h-12 items-center gap-2 rounded-full border border-line px-6 text-sm">
+              <svg class="size-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+              Max
+            </a>
+          </div>
+          <ul class="mt-10 grid gap-2 text-sm text-ink-soft sm:grid-cols-2">
+            <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-copper"></span>Склады во Владивостоке</li>
+            <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-copper"></span>Доставка по ДВ и РФ</li>
+            <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-copper"></span>Инженерные расчёты</li>
+            <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-copper"></span>Госзакупки и B2B</li>
+          </ul>
+        </div>
+        <div class="anim-rise relative grid grid-cols-2 gap-3 md:gap-4" style="animation-delay:0.12s">
+          <div class="col-span-2 overflow-hidden rounded-3xl bg-sand aspect-[16/10]">
+            <img src="catalog/3ac48ae36e4eaf.jpg" alt="Керамогранит" class="ken h-full w-full object-cover" />
+          </div>
+          <div class="overflow-hidden rounded-3xl bg-sand aspect-square">
+            <img src="catalog/2ebcf70ad559e3.jpg" alt="Плитка" class="h-full w-full object-cover" />
+          </div>
+          <div class="overflow-hidden rounded-3xl bg-sand aspect-square">
+            <img src="catalog/12a490504ee245.jpg" alt="Фибра HENDIX" class="h-full w-full object-contain p-4" />
+          </div>
+        </div>
+      </div>
+      <!-- Marquee -->
+      <div class="marquee border-y border-line bg-cream/50 py-3 overflow-hidden">
+        <div class="marquee-track flex w-max gap-8 whitespace-nowrap text-sm tracking-wide text-muted">
+          <span>Керамогранит 60×120</span><span>·</span>
+          <span>Фибра HENDIX</span><span>·</span>
+          <span>MAPEI</span><span>·</span>
+          <span>Профили швов</span><span>·</span>
+          <span>Алюминиевые профили</span><span>·</span>
+          <span>Промышленные полы</span><span>·</span>
+          <span>Дальний Восток</span><span>·</span>
+          <span>Владивосток</span><span>·</span>
+          <span>Керамогранит 60×120</span><span>·</span>
+          <span>Фибра HENDIX</span><span>·</span>
+          <span>MAPEI</span><span>·</span>
+          <span>Профили швов</span><span>·</span>
+          <span>Алюминиевые профили</span><span>·</span>
+          <span>Промышленные полы</span><span>·</span>
+          <span>Дальний Восток</span><span>·</span>
+          <span>Владивосток</span><span>·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Directions -->
+    <section class="mx-auto max-w-6xl px-5 py-16 md:py-20">
+      <p class="text-sm tracking-widest text-copper-deep uppercase">Направления</p>
+      <h2 class="mt-2 font-display text-3xl tracking-tight md:text-4xl">Что поставляем</h2>
+      <div id="directions" class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </section>
+
+    <!-- Catalog -->
+    <section id="catalog" class="border-t border-line bg-cream/60 py-16 md:py-24">
+      <div class="mx-auto max-w-6xl px-5">
+        <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="text-sm tracking-widest text-copper-deep uppercase">Каталог материалов</p>
+            <h2 class="mt-2 font-display text-4xl tracking-tight md:text-5xl">Позиции со склада и под заказ</h2>
+          </div>
+          <label class="relative block w-full md:max-w-xs">
+            <span class="sr-only">Поиск</span>
+            <svg class="pointer-events-none absolute top-1/2 left-4 size-4 -translate-y-1/2 text-muted" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+            <input id="search" type="search" placeholder="Название или свойство" class="h-12 w-full rounded-full border border-line bg-paper pr-4 pl-11 text-sm outline-none focus:border-copper" />
+          </label>
+        </div>
+        <div id="filters" class="mt-6 flex gap-2 overflow-x-auto pb-2"></div>
+        <p id="count" class="mt-4 text-sm text-muted"></p>
+        <div id="products" class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
+        <div id="empty" class="mt-8 hidden rounded-3xl border border-dashed border-line bg-paper px-6 py-16 text-center">
+          <p class="font-display text-3xl">Ничего не нашли</p>
+          <p class="mt-2 text-muted">Измените запрос или напишите нам — подберём аналог.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hendix -->
+    <section id="hendix" class="mx-auto max-w-6xl px-5 py-16 md:py-24">
+      <p class="text-sm tracking-widest text-copper-deep uppercase">Фибра HENDIX™ — все виды</p>
+      <h2 class="mt-2 max-w-3xl font-display text-4xl tracking-tight md:text-5xl">
+        Семь типов стальной фибры — от стандартных полов до несущих конструкций
+      </h2>
+      <p class="mt-4 max-w-2xl text-muted">
+        Инженерный подбор дозировки, сертификаты, расчёты под ваш проект. Поставка со склада во Владивостоке.
+      </p>
+      <div id="fiber-cards" class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="border-t border-line bg-cream/40 py-16 md:py-24">
+      <div class="mx-auto max-w-6xl px-5">
+        <p class="text-sm tracking-widest text-copper-deep uppercase">Услуги</p>
+        <h2 class="mt-2 font-display text-4xl tracking-tight md:text-5xl">Комплектация и сопровождение</h2>
+        <div id="services-list" class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="mx-auto max-w-6xl px-5 py-16">
+      <div class="rounded-3xl border border-line bg-paper p-8 md:p-12">
+        <h2 class="font-display text-3xl md:text-4xl">Почему с нами удобно</h2>
+        <ul id="highlights" class="mt-6 grid gap-3 sm:grid-cols-2"></ul>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="border-t border-line py-16 md:py-24">
+      <div class="mx-auto max-w-6xl px-5">
+        <p class="text-sm tracking-widest text-copper-deep uppercase">Отзывы</p>
+        <h2 class="mt-2 font-display text-4xl tracking-tight">Что говорят клиенты</h2>
+        <div id="reviews-list" class="mt-10 grid gap-6 md:grid-cols-3"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="border-t border-line bg-cream/50 py-16 md:py-24">
+      <div class="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-2">
+        <div>
+          <p class="text-sm tracking-widest text-copper-deep uppercase">Связаться</p>
+          <h2 class="mt-2 font-display text-4xl tracking-tight">Заявка или консультация</h2>
+          <p class="mt-4 text-muted">Ответим в Max, подберём материалы и сроки поставки.</p>
+          <div class="mt-8 space-y-4 text-sm">
+            <a href="tel:+79149644886" class="flex items-center gap-3 text-lg font-medium">
+              <span class="grid size-10 place-items-center rounded-full bg-sand">📞</span>
+              +7 (914) 964-48-86
+            </a>
+            <a href="https://max.ru/" target="_blank" rel="noreferrer" class="flex items-center gap-3">
+              <span class="grid size-10 place-items-center rounded-full bg-sand">💬</span>
+              Max
+            </a>
+            <p class="flex items-start gap-3">
+              <span class="grid size-10 shrink-0 place-items-center rounded-full bg-sand">📍</span>
+              <span>690048, Владивосток, ул. Невская, 38<br /><span class="text-muted">ООО «Торговый Путь»</span></span>
+            </p>
+          </div>
+        </div>
+        <form id="request-form" class="rounded-3xl border border-line bg-paper p-6 md:p-8">
+          <div id="form-success" class="hidden text-center">
+            <p class="font-display text-2xl">Заявка готова</p>
+            <p class="mt-2 text-muted">Сейчас откроется Max. Найдите нас по номеру +7 (914) 964-48-86 или напишите.</p>
+          </div>
+          <div id="form-fields">
+            <label class="block text-sm">Имя
+              <input name="name" required class="mt-1 h-12 w-full rounded-2xl border border-line bg-cream px-4 outline-none focus:border-copper" />
+            </label>
+            <label class="mt-4 block text-sm">Телефон
+              <input name="phone" type="tel" required class="mt-1 h-12 w-full rounded-2xl border border-line bg-cream px-4 outline-none focus:border-copper" />
+            </label>
+            <label class="mt-4 block text-sm">Направление / комментарий
+              <textarea name="note" rows="4" placeholder="Объект, объём, сроки" class="mt-1 w-full rounded-2xl border border-line bg-cream px-4 py-3 outline-none focus:border-copper"></textarea>
+            </label>
+            <p id="form-picked" class="mt-3 text-sm text-muted"></p>
+            <button type="submit" class="mt-5 h-12 w-full rounded-full bg-ink text-sm font-medium text-cream">Отправить в Max</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-line">
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-8 text-sm text-muted md:flex-row md:items-center md:justify-between">
+      <p>© <span id="year"></span> ООО «Торговый Путь»</p>
+      <p>690048, Владивосток, ул. Невская, 38</p>
+      <a href="tel:+79149644886" class="text-ink">+7 (914) 964-48-86</a>
+    </div>
+  </footer>
+
+  <!-- Mobile tray button -->
+  <button type="button" id="btn-tray-mobile" class="fixed bottom-5 left-1/2 z-30 hidden h-12 -translate-x-1/2 rounded-full bg-copper-deep px-5 text-sm text-cream shadow-lg lg:hidden">
+    Открыть заявку · <span id="tray-count-mobile">0</span>
+  </button>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 hidden bg-paper px-5 py-4 lg:hidden">
+    <div class="flex items-center justify-between">
+      <span class="font-display text-2xl">Меню</span>
+      <button type="button" id="btn-menu-close" class="grid h-11 w-11 place-items-center" aria-label="Закрыть">
+        <svg class="size-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <nav class="mt-8 flex flex-col gap-4 font-display text-3xl">
+      <a href="#catalog" data-close-menu>Каталог</a>
+      <a href="#hendix" data-close-menu>Фибра</a>
+      <a href="#services" data-close-menu>Услуги</a>
+      <a href="#reviews" data-close-menu>Отзывы</a>
+      <a href="#contact" data-close-menu>Контакты</a>
+    </nav>
+    <a href="tel:+79149644886" class="mt-10 block text-lg">+7 (914) 964-48-86</a>
+  </div>
+
+  <!-- Product modal -->
+  <div id="modal" class="fixed inset-0 z-50 hidden items-end justify-center bg-ink/40 p-0 sm:items-center sm:p-6">
+    <div class="max-h-[92vh] w-full max-w-3xl overflow-y-auto rounded-t-3xl bg-paper sm:rounded-3xl">
+      <div class="sticky top-0 z-10 flex items-center justify-between border-b border-line bg-paper/95 px-5 py-3 backdrop-blur">
+        <span class="text-sm text-muted" id="modal-group"></span>
+        <button type="button" id="modal-close" class="grid h-10 w-10 place-items-center rounded-full hover:bg-sand" aria-label="Закрыть">
+          <svg class="size-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="grid gap-0 md:grid-cols-2">
+        <div class="relative aspect-[4/5] bg-sand md:aspect-auto md:min-h-[320px]">
+          <img id="modal-img" src="" alt="" class="h-full w-full object-cover" />
+          <div id="modal-thumbs" class="absolute bottom-3 left-3 flex gap-2"></div>
+        </div>
+        <div class="p-6">
+          <h3 id="modal-name" class="font-display text-3xl leading-tight"></h3>
+          <p id="modal-short" class="mt-1 text-sm text-muted"></p>
+          <p id="modal-price" class="mt-3 text-sm"></p>
+          <p id="modal-desc" class="mt-4 text-sm leading-relaxed"></p>
+          <div id="modal-extra" class="mt-4 space-y-2 text-sm"></div>
+          <dl id="modal-specs" class="mt-5 divide-y divide-line border-y border-line"></dl>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <button type="button" id="modal-toggle" class="h-12 rounded-full bg-ink px-5 text-sm text-cream">Добавить в заявку</button>
+            <a id="modal-wa" href="#" target="_blank" rel="noreferrer" class="inline-flex h-12 items-center rounded-full border border-line px-5 text-sm">Спросить цену</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tray (cart) -->
+  <div id="tray" class="fixed inset-0 z-50 hidden items-end justify-center bg-ink/40 sm:items-center sm:p-6">
+    <div class="max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-t-3xl bg-paper p-6 sm:rounded-3xl">
+      <div class="flex items-center justify-between">
+        <h3 class="font-display text-2xl">Заявка</h3>
+        <button type="button" id="tray-close" class="grid h-10 w-10 place-items-center rounded-full hover:bg-sand" aria-label="Закрыть">
+          <svg class="size-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <ul id="tray-list" class="mt-6 space-y-3"></ul>
+      <p id="tray-empty" class="mt-8 text-center text-muted">Пока пусто — добавьте позиции из каталога</p>
+      <a id="tray-wa" href="#" target="_blank" rel="noreferrer" class="mt-6 flex h-12 items-center justify-center rounded-full bg-ink text-sm font-medium text-cream">Отправить в Max</a>
+    </div>
+  </div>
+
+  <script>
+window.SITE_DATA = {
+  "GROUP_LABEL": {
+    "tile": "Керамогранит",
+    "fiber": "Фибра HENDIX",
+    "profile": "Профили",
+    "aluminum": "Алюминий",
+    "mapei": "MAPEI"
+  },
+  "products": [
+    {
+      "key": "tile:1",
+      "group": "tile",
+      "name": "American White 60x120",
+      "short": "Керамогранит · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/071d60baf6e647.jpg",
+        "catalog/2dfa99b8cf6c65.jpg"
+      ],
+      "description": "Элегантный белый керамогранит с тонкими серыми прожилками. Идеален для создания светлых, просторных интерьеров в современном стиле. Повышенная износостойкость и простота ухода делают его идеальным выбором для полов и стен.",
+      "tags": [
+        "белый",
+        "керамогранит",
+        "премиум"
+      ]
+    },
+    {
+      "key": "tile:2",
+      "group": "tile",
+      "name": "Carrara Gold 600x1200",
+      "short": "Мраморный рисунок · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/11b061686f79c0.jpg"
+      ],
+      "description": "Роскошный золотистый мрамор с естественным рисунком жилок. Премиальное решение для избранных интерьеров. Идеален для создания атмосферы элегантности и изысканности в любом помещении.",
+      "tags": [
+        "золотой",
+        "мрамор",
+        "премиум"
+      ]
+    },
+    {
+      "key": "tile:3",
+      "group": "tile",
+      "name": "Nero Marquina 60x120",
+      "short": "Керамогранит · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/2ebcf70ad559e3.jpg",
+        "catalog/a42b552f2542a6.jpg"
+      ],
+      "description": "Черный керамогранит с контрастными белыми прожилками. Воплощение глубины и элегантности. Идеален для создания драматичных контрастов в интерьере и подходит для полов в помещениях с высокой проходимостью.",
+      "tags": [
+        "черный",
+        "керамогранит",
+        "премиум"
+      ]
+    },
+    {
+      "key": "tile:4",
+      "group": "tile",
+      "name": "Onyx Sky 60x120",
+      "short": "Керамогранит · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/e311f3dc059685.jpg",
+        "catalog/929f89f24e09d1.jpg"
+      ],
+      "description": "Небесный оникс с полупрозрачной текстурой, создающей ощущение воздуха и легкости. Уникальный материал для авангардных решений. Придает помещению воздушность и глубину благодаря специальной обработке.",
+      "tags": [
+        "голубой",
+        "керамогранит",
+        "премиум"
+      ]
+    },
+    {
+      "key": "tile:5",
+      "group": "tile",
+      "name": "CLASSIC STATUARIO 60x120",
+      "short": "Керамогранит · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/3ac48ae36e4eaf.jpg",
+        "catalog/8b22d7f12a33fe.jpg",
+        "catalog/47056942bad0d2.jpg"
+      ],
+      "description": "Классический Статуарио с чистым белым цветом и тонкими серыми прожилками. Это идеальный выбор для классических и современных интерьеров. Материал демонстрирует истинное качество итальянского керамогранита с безупречной отделкой.",
+      "tags": [
+        "белый",
+        "мрамор",
+        "классический"
+      ]
+    },
+    {
+      "key": "tile:6",
+      "group": "tile",
+      "name": "Femina Bianco 60х120",
+      "short": "Керамогранит · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/d69b7be401f123.jpg",
+        "catalog/732dae3cb698b7.jpg",
+        "catalog/e155e07c1c0341.jpg"
+      ],
+      "description": "Изысканный белый керамогранит Femina с нежными природными вариациями. Идеален для создания эксклюзивных минималистичных интерьеров. Поверхность позволяет достичь максимальной чистоты и света в помещении.",
+      "tags": [
+        "белый",
+        "керамогранит",
+        "премиум"
+      ]
+    },
+    {
+      "key": "tile:7",
+      "group": "tile",
+      "name": "FUMA DARK GREY 60х120",
+      "short": "Керамогранит · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/4742222ebdb990.jpg",
+        "catalog/eedd17515affdc.jpg",
+        "catalog/366ccbee1fc292.jpg"
+      ],
+      "description": "Темный серый керамогранит с модным матовым покрытием. Прекрасно сочетается с современными интерьерами и подчеркивает минималистичный дизайн. Высокая устойчивость к загрязнениям и прочность гарантируют долгую жизнь материала.",
+      "tags": [
+        "серый",
+        "черный",
+        "современный"
+      ]
+    },
+    {
+      "key": "tile:8",
+      "group": "tile",
+      "name": "FUMA LIGHT GREY 60х120",
+      "short": "Керамогранит · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/812da68b2f0a87.jpg",
+        "catalog/323ddc8a0c6b36.jpg",
+        "catalog/a6c62aa04aa5ae.jpg"
+      ],
+      "description": "Светло-серый керамогранит с привлекательным светлым оттенком. Отлично подходит для просторных помещений и создает ощущение свежести и чистоты. Универсальный цвет идеален для любого стиля интерьера.",
+      "tags": [
+        "серый",
+        "светлый",
+        "универсальный"
+      ]
+    },
+    {
+      "key": "tile:9",
+      "group": "tile",
+      "name": "Grigio Cronico 60x120",
+      "short": "Керамогранит · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/dd9d825e75bc19.jpg",
+        "catalog/88666512079a95.jpg",
+        "catalog/bc7e8c1e0e6676.jpg"
+      ],
+      "description": "Серый керамогранит с артистичным дизайном, напоминающим кромку бетона. Идеален для современных индустриальных интерьеров. Материал сочетает практичность с эстетической привлекательностью.",
+      "tags": [
+        "серый",
+        "бетон",
+        "индустриальный"
+      ]
+    },
+    {
+      "key": "tile:10",
+      "group": "tile",
+      "name": "JINIVA NATURAL 60х120",
+      "short": "Керамогранит · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/0a64ffb37a97a7.jpg",
+        "catalog/322e7bd400c07a.jpg",
+        "catalog/7581f0a0c42a3c.jpg"
+      ],
+      "description": "Натуральный керамогранит Jiniva с естественным рисунком камня. Каждая плитка уникальна и демонстрирует красоту природных вариаций. Идеален для создания аутентичного интерьера с природным очарованием.",
+      "tags": [
+        "натуральный",
+        "камень",
+        "бежевый"
+      ]
+    },
+    {
+      "key": "tile:11",
+      "group": "tile",
+      "name": "KREMEN IVORY 60X120",
+      "short": "Керамогранит · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/8a9ba7dff6c812.jpg"
+      ],
+      "description": "Слоновая кость - это теплый, нейтральный оттенок, который придает уют любому пространству. Керамогранит Kremen обладает отличными характеристиками прочности и долговечности, идеален для активных зон.",
+      "tags": [
+        "бежевый",
+        "белый",
+        "теплый"
+      ]
+    },
+    {
+      "key": "tile:12",
+      "group": "tile",
+      "name": "ONYX GREY 60x120",
+      "short": "Керамогранит · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/7c0e97a64b14f2.jpg",
+        "catalog/3893623bd0c441.jpg",
+        "catalog/7722e8bf07e372.jpg"
+      ],
+      "description": "Серый оникс с полупрозрачной текстурой, создающей глубину и мистичность. Профессиональный выбор для дизайнеров, ищущих необычные решения. Материал привлекает внимание своей уникальной эстетикой.",
+      "tags": [
+        "серый",
+        "оникс",
+        "необычный"
+      ]
+    },
+    {
+      "key": "tile:13",
+      "group": "tile",
+      "name": "ONYX SMOKE 60X120",
+      "short": "Керамогранит · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/87582a7923dd3d.jpg",
+        "catalog/4e2bf86ace4455.jpg",
+        "catalog/a7370787ae5768.jpg",
+        "catalog/4526a789a2e1b9.jpg"
+      ],
+      "description": "Дымчатый оникс - это смелый выбор для инновативных интерьеров. Четыре различных оттенка позволяют создавать уникальные комбинации. Материал демонстрирует редкое сочетание современности и естественной красоты.",
+      "tags": [
+        "черный",
+        "серый",
+        "оникс"
+      ]
+    },
+    {
+      "key": "tile:14",
+      "group": "tile",
+      "name": "PERSIAN CEDAR 600X1200",
+      "short": "Мраморный рисунок · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/b0928397465997.jpg",
+        "catalog/55c140954ecfd3.jpg",
+        "catalog/992ea405037f23.jpg"
+      ],
+      "description": "Персидский кедр - это премиальный мрамор с теплыми коричневыми тонами и естественными вариациями. Исключительная красота и редкость делают этот материал идеальным для VIP-интерьеров. Каждая плитка - произведение природного искусства.",
+      "tags": [
+        "коричневый",
+        "мрамор",
+        "премиум"
+      ]
+    },
+    {
+      "key": "tile:15",
+      "group": "tile",
+      "name": "TALATHELLA CLASSIC 600X1200",
+      "short": "Мраморный рисунок · 60×120",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/7e3c1122fcfa6d.jpg",
+        "catalog/3290a8bf3d529b.jpg"
+      ],
+      "description": "Классический мрамор Talathella с нежными бежевыми оттенками. Традиционный выбор для тех, кто ценит проверенную классику. Материал обладает потрясающей прочностью при сохранении элегантности и изящества.",
+      "tags": [
+        "бежевый",
+        "мрамор",
+        "классический"
+      ]
+    },
+    {
+      "key": "fiber:h1",
+      "group": "fiber",
+      "name": "HENDIX™ 1/50",
+      "short": "Стандартная анкерная фибра",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/12a490504ee245.jpg"
+      ],
+      "description": "Стальная проволочная фибра Hendix 1/50 с анкерами в виде загнутых концов предназначена для дисперсного армирования бетона (взамен арматуры и сварных сеток) в стандартных промышленных полах, ленточных фундаментах, дорожных покрытиях. Сочетает хорошие армирующие свойства и низкую склонность к комкованию.",
+      "tags": [],
+      "specs": {
+        "Диаметр Ø": "1,0 ± 0,04 мм",
+        "Длина L": "50 ± 2,0 мм",
+        "Длина концов": "2,0 −1,0/+2,0 мм",
+        "Высота изгиба Hw": "2,1 +0,5/−0,0 мм",
+        "Угол изгиба": "40° ± 5°",
+        "Сопротивление разрыву": "1235 МПа",
+        "Модуль упругости": "≥ 190 000 МПа",
+        "Кол-во фибр в 1 кг": "~3240 шт"
+      },
+      "cert": "EN 14889-1:2006 · РОСС RU.АЯ64.Н03108",
+      "packing": "Коробки 25 кг (ориентирована в одном направлении). Биг-бэг 1000 кг.",
+      "application": "Промышленные полы на упругом основании, ленточные фундаменты, дороги"
+    },
+    {
+      "key": "fiber:h2",
+      "group": "fiber",
+      "name": "HENDIX™ Prime 75/52",
+      "short": "Премиум фибра для высоких нагрузок",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/af08e3e81d3bb4.jpg"
+      ],
+      "description": "Стальная проволочная фибра Hendix Prime 75/52 с анкерами в виде загнутых концов предназначена для дисперсного армирования бетона как в стандартных приложениях, так и для несущих конструкций (фундаменты, стены, плиты перекрытий, полы на сваях, мостовые конструкции, ЖБК). Позволяет снизить дозировку на 20–30% по сравнению с 1/50.",
+      "tags": [],
+      "specs": {
+        "Диаметр Ø": "0,75 ± 0,04 мм",
+        "Длина L": "52 ± 2,0 мм",
+        "Длина концов": "2,0 −1,0/+2,0 мм",
+        "Высота изгиба Hw": "2,1 +0,5/−0,0 мм",
+        "Угол изгиба": "40° ± 5°",
+        "Сопротивление разрыву": "1500 МПа",
+        "Модуль упругости": "≥ 190 000 МПа",
+        "Кол-во фибр в 1 кг": "~5545 шт"
+      },
+      "cert": "EN 14889-1:2006 · РОСС RU.АЯ64.Н03108",
+      "packing": "Коробки 25 кг. Биг-бэг 1000 кг.",
+      "application": "Стандартные и нестандартные приложения с высокими нагрузками, несущие конструкции"
+    },
+    {
+      "key": "fiber:h3",
+      "group": "fiber",
+      "name": "HENDIX™ Ultra 75/52",
+      "short": "Высокоуглеродистая ≥1800 МПа",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/af08e3e81d3bb4.jpg"
+      ],
+      "description": "Стальная проволочная фибра Hendix Ultra 75/52 с анкерами в виде загнутых концов производится из высокоуглеродистой проволоки. Предназначена для дисперсного армирования бетона в несущих конструкциях и приложениях сталефибробетона со специальными требованиями. Исключительно высокие армирующие свойства.",
+      "tags": [],
+      "specs": {
+        "Диаметр Ø": "0,75 ± 0,04 мм",
+        "Длина L": "52 ± 2,0 мм",
+        "Длина концов": "2,0 −1,0/+2,0 мм",
+        "Высота изгиба Hw": "2,1 +0,5/−0,0 мм",
+        "Угол изгиба": "40° ± 5°",
+        "Сопротивление разрыву": "1800 МПа",
+        "Модуль упругости": "≥ 190 000 МПа",
+        "Кол-во фибр в 1 кг": "~5445 шт"
+      },
+      "cert": "EN 14889-1:2006 · РОСС RU.АЯ64.Н03108",
+      "packing": "Коробки 25 кг. Биг-бэг 1000 кг.",
+      "application": "Несущие конструкции, специальные приложения СФБ"
+    },
+    {
+      "key": "fiber:h4",
+      "group": "fiber",
+      "name": "HENDIX™ Prime 60/32",
+      "short": "Для тонкостенных конструкций и торкрета",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/46470f59e9571f.jpg"
+      ],
+      "description": "Короткая и тонкая фибра (L=32 мм, D=0,6 мм) позволяет использовать её в тонких бетонных конструкциях любого типа с максимальным размером заполнителей 8–12 мм и во всех типах набрызг-бетонных конструкций, в шахто- и тоннелестроении. Очень большое количество фибр в килограмме (в 2,5–4,3 раза больше, чем у других типов).",
+      "tags": [],
+      "specs": {
+        "Диаметр Ø": "0,6 ± 0,04 мм",
+        "Длина L": "32 ± 1,5 мм",
+        "Длина концов": "2 ± 1,0 мм",
+        "Высота изгиба Hw": "1,7 +0,3/−0,0 мм",
+        "Угол изгиба": "40° ± 5°",
+        "Сопротивление разрыву": "1450–1800 МПа",
+        "Модуль упругости": "≥ 190 000 МПа",
+        "Кол-во фибр в 1 кг": "~14075 шт"
+      },
+      "cert": "РОСС RU.АЯ64.Н03108",
+      "packing": "Коробки 25 кг. Биг-бэг 1000 кг.",
+      "application": "Тонкостенные конструкции, торкретирование, тоннели, шахты"
+    },
+    {
+      "key": "fiber:h5",
+      "group": "fiber",
+      "name": "HENDIX™ Prime XP 75/62",
+      "short": "Склеенная Hi-Tech для очень высоких нагрузок",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/c65f5baab809f8.jpg"
+      ],
+      "description": "Склеенная стальная проволочная фибра с усиленным анкером. Идеальна для конструкционных применений с высокими требованиями к производительности и прочности бетона на растяжение. Наиболее эффективный продукт для армирования несущих конструкций. Производится склеенной в кассеты для равномерного распределения без комкования.",
+      "tags": [],
+      "specs": {
+        "Длина L": "62 ± 2,0 мм",
+        "Диаметр Ø": "0,75 ± 0,04 мм",
+        "Соотношение L/Ø": "83",
+        "Длина изгиба Lw": "6,9 ± 1,00 мм",
+        "Высота изгиба Hw": "4,0+ мм",
+        "Сопротивление разрыву": "≥ 1500 МПа",
+        "Кол-во фибр в 1 кг": "~4651 шт",
+        "Суммарная длина в 10 кг": "2883 м"
+      },
+      "cert": "EN 14889-1:2006 · СТО 71915393-ТУ 106-2011",
+      "packing": "Склеенная в кассеты. Коробки / биг-бэг.",
+      "application": "Фундаменты, стены, плиты перекрытий, полы на сваях, мосты, ЖБК"
+    },
+    {
+      "key": "fiber:h6",
+      "group": "fiber",
+      "name": "HENDIX™ Prime XP 55/35",
+      "short": "Склеенная для тонких конструкций",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/a42ef9011c2f8b.jpg"
+      ],
+      "description": "Склеенная стальная проволочная фибра с анкерами. Короткая и тонкая (L=35 мм, D=0,55 мм) — для тонких бетонных конструкций с заполнителем 8–12 мм. Максимальное насыщение матрицы фиброй (в 2,8–4,8 раза больше фибр в кг, чем у стандартных типов).",
+      "tags": [],
+      "specs": {
+        "Длина L": "35 ± 2,0 мм",
+        "Диаметр Ø": "0,55 ± 0,03 мм",
+        "Соотношение L/Ø": "64",
+        "Длина изгиба Lw": "5,6 ± 1,00 мм",
+        "Высота изгиба Hw": "3,0 +0,1/−0,2 мм",
+        "Сопротивление разрыву": "≥ 1500 МПа",
+        "Кол-во фибр в 1 кг": "~15400 шт",
+        "Суммарная длина в 10 кг": "5362 м"
+      },
+      "cert": "РОСС RU.АЯ64.Н03108",
+      "packing": "Склеенная в кассеты. Коробки / биг-бэг.",
+      "application": "Тонкостенные конструкции, торкрет, стяжки, сборные элементы"
+    },
+    {
+      "key": "fiber:h7",
+      "group": "fiber",
+      "name": "HENDIX™ Prime XP-Z 55/35",
+      "short": "Оцинкованная склеенная",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/d8495a2330d6a9.jpg"
+      ],
+      "description": "Оцинкованная склеенная стальная фибра. Усовершенствованная форма анкера обеспечивает высочайшие показатели прочности бетона на растяжение. Разработана специально для тонкостенных бетонных конструкций, торкретирования тоннелей и шахтных выработок. Цинковое покрытие повышает коррозионную стойкость.",
+      "tags": [],
+      "specs": {
+        "Длина L": "35 мм",
+        "Диаметр Ø": "0,55 мм",
+        "Сопротивление разрыву": "≥ 1500 МПа",
+        "Кол-во фибр в 1 кг": "~15320 шт",
+        "Покрытие": "Оцинкованная"
+      },
+      "cert": "По запросу",
+      "packing": "Склеенная в кассеты. Коробки / биг-бэг.",
+      "application": "Тоннели, шахты, тонкостенные конструкции, агрессивные среды"
+    },
+    {
+      "key": "profile:p1",
+      "group": "profile",
+      "name": "Conecto – Dowel",
+      "short": "Дюбельный профиль",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/2c07eb4d1ace89.png",
+        "catalog/736e9c6630ac3f.png",
+        "catalog/ab219404f009b7.png"
+      ],
+      "description": "Продукты Conecto – Dowel разработаны для устройства деформационных швов в промышленных полах. Стальные армирующие профили выполняют функцию несъёмной опалубки при заливке и защищают кромки плит в эксплуатации. Система Dowel — стальная закладная пластина в усиленном пластиковом кожухе: позволяет горизонтальное перемещение плит при усадке и температуре, удерживая от вертикальных смещений. Равномерно распределяет нагрузки между картами пола.",
+      "tags": [],
+      "specs": {
+        "Тип": "Дюбельный (несъёмная опалубка + защита кромок)",
+        "Пластина Dowel": "180×120×8 или 180×140×10 мм",
+        "Сталь": "S355MC",
+        "Расстояние пластин": "600 мм (5D), варианты 6D/7D",
+        "Длина профиля": "3 м (стандарт)",
+        "Высота профиля": "от 50 до 275+ мм под высоту пола",
+        "Компенсация": "±15…30 мм горизонталь/продольно",
+        "Материал кожуха": "ABS высокопрочный пластик"
+      },
+      "application": "Деформационные швы промышленных полов"
+    },
+    {
+      "key": "profile:p2",
+      "group": "profile",
+      "name": "Conecto – SINUS 06NS50-4D",
+      "short": "Синус-профиль 4D",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/998bf70bb56a05.png",
+        "catalog/a639dbf25a6540.png"
+      ],
+      "description": "Синусоидальный профиль 4D для конструкционных швов. Обеспечивает плавную передачу усилий и защиту кромок.",
+      "tags": [],
+      "specs": {
+        "Тип": "Синус 4D",
+        "Серия": "06NS50",
+        "Применение": "Конструкционные швы"
+      },
+      "application": "Промышленные полы с высокими нагрузками"
+    },
+    {
+      "key": "profile:p3",
+      "group": "profile",
+      "name": "Conecto – SINUS 06NC110-5D",
+      "short": "Синус-профиль 5D",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/81802b2a3878b3.png",
+        "catalog/0bb6fa63af4602.png"
+      ],
+      "description": "Усиленный синусоидальный профиль 5D. Максимальная защита кромок и передача нагрузок в зонах интенсивной эксплуатации.",
+      "tags": [],
+      "specs": {
+        "Тип": "Синус 5D",
+        "Серия": "06NC110",
+        "Применение": "Высокие нагрузки"
+      },
+      "application": "Склады, производства, паркинги"
+    },
+    {
+      "key": "profile:p4",
+      "group": "profile",
+      "name": "Conecto – OMEGA 03NB",
+      "short": "Омега-профиль",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/0bd23926734257.png",
+        "catalog/75875e92af08d8.png"
+      ],
+      "description": "Классический омега-профиль для деформационных и конструкционных швов бетонных полов.",
+      "tags": [],
+      "specs": {
+        "Тип": "Омега",
+        "Серия": "03NB",
+        "Материал": "Сталь"
+      },
+      "application": "Деформационные швы"
+    },
+    {
+      "key": "profile:p5",
+      "group": "profile",
+      "name": "Conecto – STRIPJOINT & ANGLE BARS",
+      "short": "Полосовые и угловые элементы",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/e84582f4e4fc3d.png",
+        "catalog/53bedb4cd6a20f.png",
+        "catalog/2ccccdad06f816.png"
+      ],
+      "description": "Система полосовых стыков и угловых элементов для армирования и защиты швов.",
+      "tags": [],
+      "specs": {
+        "Тип": "Stripjoint / Angle",
+        "Комплектация": "Полосы + углы"
+      },
+      "application": "Армирование швов, углы карт"
+    },
+    {
+      "key": "profile:p6",
+      "group": "profile",
+      "name": "Conecto – SINUS 06NC50-R",
+      "short": "Синус радиусный",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/5b7fd233fc0d6c.png",
+        "catalog/e8f86ef390f150.png"
+      ],
+      "description": "Радиусный синус-профиль для криволинейных участков и специальных зон.",
+      "tags": [],
+      "specs": {
+        "Тип": "Синус R",
+        "Серия": "06NC50"
+      },
+      "application": "Криволинейные швы"
+    },
+    {
+      "key": "profile:p7",
+      "group": "profile",
+      "name": "Conecto – SINUS 06NC110-R",
+      "short": "Синус радиусный усиленный",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/sinus-110r.png"
+      ],
+      "description": "Усиленный радиусный синус-профиль для зон с повышенными нагрузками.",
+      "tags": [],
+      "specs": {
+        "Тип": "Синус R усиленный",
+        "Серия": "06NC110"
+      },
+      "application": "Высоконагруженные криволинейные зоны"
+    },
+    {
+      "key": "profile:p8",
+      "group": "profile",
+      "name": "Conecto – HDS",
+      "short": "Heavy Duty System",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/50214afa309245.png"
+      ],
+      "description": "Система профилей повышенной прочности (Heavy Duty) для экстремальных нагрузок на промышленных объектах.",
+      "tags": [],
+      "specs": {
+        "Тип": "HDS",
+        "Нагрузка": "Экстремальная"
+      },
+      "application": "Тяжёлая промышленность, порты, логистические центры"
+    },
+    {
+      "key": "aluminum:a1",
+      "group": "aluminum",
+      "name": "Алюминиевые напольные профили",
+      "short": "Для деформационных швов полов",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/alu-floor.png",
+        "catalog/elasto.png",
+        "catalog/7d0bbfc96a2434.png"
+      ],
+      "description": "Алюминиевые профили для деформационных швов в полах. Компенсируют температурные и осадочные смещения конструкций.",
+      "tags": [],
+      "specs": {
+        "Материал": "Алюминий",
+        "Применение": "Полы",
+        "Тип": "Деформационный шов"
+      },
+      "application": "Монолитное строительство, полы"
+    },
+    {
+      "key": "aluminum:a2",
+      "group": "aluminum",
+      "name": "Conecto – CS (паркинги)",
+      "short": "Алюминиевый профиль для паркингов",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/7081a9e95c1a1f.png",
+        "catalog/304fcbccc35196.png"
+      ],
+      "description": "Алюминиевая рифлёная планка с перфорацией для крепления. Для паркингов с любой интенсивностью движения. Модели CS 120 / CS 160 / CS 260.",
+      "tags": [],
+      "specs": {
+        "CS 120": "видимый 120 мм, шов max 50, нагруз 6 кН",
+        "CS 160": "видимый 160 мм, шов max 90, нагруз 60 кН",
+        "CS 260": "видимый 260 мм, шов max 150, нагруз 60 кН",
+        "Материал": "Натуральный алюминий"
+      },
+      "application": "Паркинги, деформационные швы"
+    },
+    {
+      "key": "aluminum:a3",
+      "group": "aluminum",
+      "name": "Conecto – Park GA",
+      "short": "Герметичный профиль для паркингов",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/b98c811d9440a9.png",
+        "catalog/2317ce053d02de.png",
+        "catalog/6784b171b9d02c.png"
+      ],
+      "description": "Герметичный профиль, устанавливаемый в нише деформационного шва на паркингах. Варианты: закладной, удлинённый, пристенный. Высокая нагрузка до 600 кН.",
+      "tags": [],
+      "specs": {
+        "GA 43.10": "видимый 89 мм, шов max 65, нагруз 600 кН",
+        "Материал": "Алюминий, EPDM, сталь",
+        "Компенсация": "горизонталь/вертикаль"
+      },
+      "application": "Паркинги с герметизацией швов"
+    },
+    {
+      "key": "aluminum:a4",
+      "group": "aluminum",
+      "name": "Настенно-потолочные алюминиевые профили",
+      "short": "Для стен и потолков",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/789757a7dc33f6.png",
+        "catalog/95c18dfac59ff6.png",
+        "catalog/34c9d79cc26c33.png"
+      ],
+      "description": "Алюминиевые профили для деформационных швов в стенах и потолках. Компенсируют смещения в сейсмоактивных районах и при температурных перепадах.",
+      "tags": [],
+      "specs": {
+        "Материал": "Алюминий",
+        "Применение": "Стены, потолки"
+      },
+      "application": "Монолит, сейсморайоны"
+    },
+    {
+      "key": "aluminum:a5",
+      "group": "aluminum",
+      "name": "Противоусадочные алюминиевые профили",
+      "short": "Контроль усадочных швов",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/e27602f191f12c.png",
+        "catalog/aa5b5f39ba4777.png",
+        "catalog/cd02f70d6f1e8b.png"
+      ],
+      "description": "Профили для формирования и защиты противоусадочных (контрольных) швов в бетонных конструкциях.",
+      "tags": [],
+      "specs": {
+        "Материал": "Алюминий",
+        "Тип": "Противоусадочный"
+      },
+      "application": "Контрольные швы в полах и плитах"
+    },
+    {
+      "key": "mapei:m1",
+      "group": "mapei",
+      "name": "Mapetop S AR3",
+      "short": "Упрочнитель на основе корунда",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/99edb2d1602aa1.png"
+      ],
+      "description": "Готовый к использованию сухой упрочняющий состав на основе корунда для износостойких бетонных полов. Высокая износостойкость, прочность на сжатие и изгиб. Беспыльная, лёгкая в очистке поверхность. Для мастерских, гаражей, парковок, складов, пандусов, производств.",
+      "tags": [],
+      "specs": {
+        "Основа": "Корунд",
+        "Тип": "Сухой упрочнитель (топпинг)",
+        "Нагрузка": "Средняя и высокая"
+      },
+      "application": "Промышленные и коммерческие полы внутри и снаружи"
+    },
+    {
+      "key": "mapei:m2",
+      "group": "mapei",
+      "name": "Mapetop N AR6",
+      "short": "Упрочнитель на основе кварца",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/99edb2d1602aa1.png"
+      ],
+      "description": "Сухой упрочняющий состав на основе кварца для бетонных полов со средней и высокой интенсивностью эксплуатации.",
+      "tags": [],
+      "specs": {
+        "Основа": "Кварц",
+        "Тип": "Сухой упрочнитель"
+      },
+      "application": "Склады, производства, парковки"
+    },
+    {
+      "key": "mapei:m3",
+      "group": "mapei",
+      "name": "Mapetop S AR6",
+      "short": "Корундовый упрочнитель повышенной стойкости",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/99edb2d1602aa1.png"
+      ],
+      "description": "Упрочнитель на основе корунда с повышенной износостойкостью для зон с интенсивным движением и абразивными нагрузками.",
+      "tags": [],
+      "specs": {
+        "Основа": "Корунд",
+        "Стойкость": "Повышенная"
+      },
+      "application": "Высоконагруженные промышленные полы"
+    },
+    {
+      "key": "mapei:m4",
+      "group": "mapei",
+      "name": "Ремонтные смеси MAPEI",
+      "short": "Быстротвердеющие составы для бетона",
+      "price": "Цена по запросу",
+      "images": [
+        "catalog/99edb2d1602aa1.png"
+      ],
+      "description": "Линейка быстротвердеющих и сверхбыстротвердеющих смесей для ремонта бетонных конструкций, наливные составы, смеси для выравнивания и финишной отделки, гидроизоляция и защита бетонных поверхностей.",
+      "tags": [],
+      "specs": {
+        "Типы": "Тиксотропные / наливные",
+        "Скорость": "Быстро- и сверхбыстротвердеющие"
+      },
+      "application": "Ремонт бетона, выравнивание, гидрозащита"
+    }
+  ],
+  "services": [
+    {
+      "icon": "🚚",
+      "name": "Доставка и логистика",
+      "description": "Надёжная доставка строительных материалов по Дальнему Востоку и России. Работаем с проверенными логистическими партнёрами.",
+      "price": "Цена по запросу"
+    },
+    {
+      "icon": "📐",
+      "name": "Инженерные расчёты и подбор",
+      "description": "Бесплатные консультации и расчёты дозировки фибры, подбор решений HENDIX Solutions под ваш проект.",
+      "price": "Бесплатно / по запросу"
+    },
+    {
+      "icon": "🏭",
+      "name": "Комплектация складов и производств",
+      "description": "Стеллажи, техника, металлическая мебель, ограждения, СКУД. Поставка и монтаж. Работа по госзакупкам.",
+      "price": "Цена по запросу"
+    },
+    {
+      "icon": "🏢",
+      "name": "Комплектация офисов и административных зон",
+      "description": "Мебель для руководителя и персонала, конференц-залы, архивы, сейфы. План расстановки, поставка, сборка.",
+      "price": "Цена по запросу"
+    },
+    {
+      "icon": "🛒",
+      "name": "Комплектация торговых помещений",
+      "description": "Торговые стеллажи, кассовые зоны, холодильное оборудование, тележки. Полный цикл поставки и монтажа.",
+      "price": "Цена по запросу"
+    },
+    {
+      "icon": "🍽️",
+      "name": "Комплектация столовых, кафе, ресторанов",
+      "description": "Технологическое оборудование кухни, мебель для залов, посуда и инвентарь. Поставка и монтаж.",
+      "price": "Цена по запросу"
+    },
+    {
+      "icon": "🏥",
+      "name": "Комплектация медицинских учреждений",
+      "description": "Медицинская и лабораторная мебель, оборудование для реабилитации. Поставка и сборка.",
+      "price": "Цена по запросу"
+    },
+    {
+      "icon": "🌳",
+      "name": "Малые архитектурные формы и уличный свет",
+      "description": "Скамейки, урны, детские площадки, воркаут, парковые светильники. Поставка и монтаж.",
+      "price": "Цена по запросу"
+    },
+    {
+      "icon": "📋",
+      "name": "Технические задания и госзакупки",
+      "description": "Прописываем техзадания. Работаем по аукционам на госзакупках. B2B-подход.",
+      "price": "По запросу"
+    },
+    {
+      "icon": "🤝",
+      "name": "Оптовые условия и сопровождение",
+      "description": "Специальные условия для строительных компаний. Сопровождение на стройплощадке, постпродажное обслуживание.",
+      "price": "Индивидуально"
+    }
+  ],
+  "reviews": [
+    {
+      "text": "Отличное качество керамогранита и оперативная доставка во Владивосток. Рекомендую как надёжного поставщика.",
+      "author": "Алексей К.",
+      "role": "Строительная компания"
+    },
+    {
+      "text": "Использовали фибру HENDIX на промышленном полу — результат превзошёл ожидания. Трещин нет, сроки сократили.",
+      "author": "ООО «Евротекс»",
+      "role": "г. Владивосток"
+    },
+    {
+      "text": "Профессиональные консультации и полный пакет документов. Работаем уже несколько лет.",
+      "author": "Марина С.",
+      "role": "Дизайнер интерьеров"
+    }
+  ],
+  "directions": [
+    {
+      "name": "Керамогранит",
+      "desc": "Премиум плитка 60×120",
+      "group": "tile"
+    },
+    {
+      "name": "Фибра HENDIX",
+      "desc": "7 типов стальной фибры",
+      "group": "fiber"
+    },
+    {
+      "name": "Профили швов",
+      "desc": "Стальные и алюминиевые",
+      "group": "profile"
+    },
+    {
+      "name": "MAPEI",
+      "desc": "Топпинги и ремонт бетона",
+      "group": "mapei"
+    },
+    {
+      "name": "Полы промышленные",
+      "desc": "СФБ-решения и фибра",
+      "group": "fiber"
+    },
+    {
+      "name": "Алюминий",
+      "desc": "Полы, паркинги, стены",
+      "group": "aluminum"
+    },
+    {
+      "name": "Комплектация",
+      "desc": "Склады, офисы, объекты",
+      "group": null
+    },
+    {
+      "name": "Кровля",
+      "desc": "Металлочерепица, гибкая",
+      "group": null
+    },
+    {
+      "name": "Фасад",
+      "desc": "Системы и отделка",
+      "group": null
+    },
+    {
+      "name": "Гидроизоляция",
+      "desc": "Мембраны и составы",
+      "group": null
+    },
+    {
+      "name": "Пиломатериалы",
+      "desc": "Брус, доска, вагонка",
+      "group": null
+    }
+  ],
+  "highlights": [
+    "Собственные склады во Владивостоке",
+    "Поставки по Дальнему Востоку и России",
+    "Бесплатные консультации и инженерные расчёты",
+    "Наличие готовой продукции на складах",
+    "Работа с госзакупками и B2B",
+    "Сопровождение на стройплощадке",
+    "Индивидуальные программы для постоянных клиентов"
+  ]
+};
+  </script>
+  <script>
+    (function () {
+      const DATA = window.SITE_DATA;
+      const PHONE = '+7 (914) 964-48-86';
+      const WA = 'https://max.ru/';
+      const STORAGE_KEY = 'tp-request';
+      const FILTERS = [
+        { id: 'all', label: 'Все материалы' },
+        { id: 'tile', label: 'Керамогранит' },
+        { id: 'fiber', label: 'Фибра HENDIX' },
+        { id: 'profile', label: 'Профили' },
+        { id: 'aluminum', label: 'Алюминий' },
+        { id: 'mapei', label: 'MAPEI' },
+      ];
+
+      let filter = 'all';
+      let query = '';
+      let keys = [];
+      let active = null;
+      let photo = 0;
+      let interest = '';
+
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) keys = parsed.filter((x) => typeof x === 'string');
+        }
+      } catch (_) {}
+
+      function saveKeys() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(keys));
+      }
+
+      function waLink(text) {
+        // Max не поддерживает deep-link с текстом по номеру, открываем главную
+        return WA;
+      }
+
+      function findProduct(key) {
+        return DATA.products.find((p) => p.key === key);
+      }
+
+      function toggleKey(key) {
+        keys = keys.includes(key) ? keys.filter((k) => k !== key) : [...keys, key];
+        saveKeys();
+        renderTrayBadge();
+        if (active && active.key === key) renderModal();
+        renderProducts();
+        renderTray();
+        updateFormPicked();
+      }
+
+      function listProducts() {
+        const needle = query.trim().toLowerCase();
+        return DATA.products.filter((item) => {
+          if (filter !== 'all' && item.group !== filter) return false;
+          if (!needle) return true;
+          const hay = [item.name, item.short, item.description, item.application || '', ...(item.tags || [])]
+            .join(' ')
+            .toLowerCase();
+          return hay.includes(needle);
+        });
+      }
+
+      // Directions
+      const dirEl = document.getElementById('directions');
+      dirEl.innerHTML = DATA.directions
+        .map(
+          (d) => `
+        <button type="button" data-group="${d.group || ''}" data-name="${d.name}"
+          class="group flex items-center gap-3 rounded-2xl border border-line bg-paper px-4 py-4 text-left transition hover:border-copper">
+          <span class="flex flex-col">
+            <span class="font-medium">${d.name}</span>
+            <span class="text-sm text-muted">${d.desc}</span>
+          </span>
+          <svg class="ml-auto size-5 text-muted transition group-hover:text-copper-deep" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+        </button>`
+        )
+        .join('');
+      dirEl.querySelectorAll('button').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const g = btn.dataset.group;
+          const name = btn.dataset.name;
+          if (g) {
+            filter = g;
+            query = '';
+            document.getElementById('search').value = '';
+            renderFilters();
+            renderProducts();
+            document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
+          } else {
+            interest = name;
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+      // Filters
+      function renderFilters() {
+        document.getElementById('filters').innerHTML = FILTERS.map(
+          (f) => `
+          <button type="button" data-id="${f.id}"
+            class="h-11 shrink-0 rounded-full px-4 text-sm ${filter === f.id ? 'bg-ink text-cream' : 'border border-line bg-paper text-ink'}">
+            ${f.label}
+          </button>`
+        ).join('');
+        document.querySelectorAll('#filters button').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            filter = btn.dataset.id;
+            renderFilters();
+            renderProducts();
+          });
+        });
+      }
+
+      function renderProducts() {
+        const list = listProducts();
+        const count = list.length;
+        document.getElementById('count').textContent =
+          count + ' ' + (count === 1 ? 'позиция' : count < 5 ? 'позиции' : 'позиций') + ' · цена по запросу';
+        const empty = document.getElementById('empty');
+        const grid = document.getElementById('products');
+        if (count === 0) {
+          empty.classList.remove('hidden');
+          grid.innerHTML = '';
+          return;
+        }
+        empty.classList.add('hidden');
+        grid.innerHTML = list
+          .map((item) => {
+            const inCart = keys.includes(item.key);
+            const fit = item.group === 'tile' ? 'object-cover' : 'object-contain p-6';
+            return `
+            <article class="group flex flex-col overflow-hidden rounded-3xl border border-line bg-paper transition duration-200 hover:-translate-y-1 hover:border-copper">
+              <button type="button" data-open="${item.key}" class="text-left">
+                <div class="relative aspect-[4/5] bg-sand">
+                  <img src="${item.images[0] || ''}" alt="${item.name}" class="h-full w-full ${fit}" onerror="this.parentElement.innerHTML='<div class=\\'grid h-full place-items-center bg-sand font-display text-xl\\'>${item.name}</div>'" />
+                  <span class="absolute top-3 left-3 rounded-full bg-cream/90 px-3 py-1 text-xs tracking-wide text-ink-soft uppercase">${DATA.GROUP_LABEL[item.group]}</span>
+                </div>
+                <div class="px-4 pt-4">
+                  <h3 class="font-display text-2xl leading-tight">${item.name}</h3>
+                  <p class="mt-1 line-clamp-2 text-sm text-muted">${item.short}</p>
+                </div>
+              </button>
+              <div class="mt-auto flex items-center justify-between gap-3 px-4 py-4">
+                <span class="text-sm text-ink-soft">${item.price}</span>
+                <button type="button" data-toggle="${item.key}" class="h-11 rounded-full px-4 text-sm ${inCart ? 'bg-copper-deep text-cream' : 'bg-ink text-cream'}">
+                  ${inCart ? 'В заявке' : 'В заявку'}
+                </button>
+              </div>
+            </article>`;
+          })
+          .join('');
+        grid.querySelectorAll('[data-open]').forEach((btn) => {
+          btn.addEventListener('click', () => openProduct(btn.dataset.open));
+        });
+        grid.querySelectorAll('[data-toggle]').forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleKey(btn.dataset.toggle);
+          });
+        });
+      }
+
+      // Fiber section
+      const fibers = DATA.products.filter((p) => p.group === 'fiber');
+      document.getElementById('fiber-cards').innerHTML = fibers
+        .map(
+          (item) => `
+        <button type="button" data-open="${item.key}" class="rounded-3xl border border-line bg-paper p-5 text-left transition hover:border-copper">
+          <div class="aspect-[4/3] overflow-hidden rounded-2xl bg-sand">
+            <img src="${item.images[0] || ''}" alt="${item.name}" class="h-full w-full object-contain p-4" />
+          </div>
+          <h3 class="mt-4 font-display text-xl">${item.name}</h3>
+          <p class="mt-1 text-sm text-muted">${item.short}</p>
+        </button>`
+        )
+        .join('');
+      document.querySelectorAll('#fiber-cards [data-open]').forEach((btn) => {
+        btn.addEventListener('click', () => openProduct(btn.dataset.open));
+      });
+
+      // Services
+      document.getElementById('services-list').innerHTML = DATA.services
+        .map(
+          (s) => `
+        <div class="rounded-3xl border border-line bg-paper p-6">
+          <div class="text-2xl">${s.icon}</div>
+          <h3 class="mt-3 font-display text-xl">${s.name}</h3>
+          <p class="mt-2 text-sm text-muted">${s.description}</p>
+          <p class="mt-3 text-sm text-ink-soft">${s.price}</p>
+        </div>`
+        )
+        .join('');
+
+      // Highlights
+      document.getElementById('highlights').innerHTML = DATA.highlights
+        .map(
+          (h) => `
+        <li class="flex items-start gap-3">
+          <span class="mt-1 grid size-5 shrink-0 place-items-center rounded-full bg-copper/15 text-copper-deep text-xs">✓</span>
+          <span>${h}</span>
+        </li>`
+        )
+        .join('');
+
+      // Reviews
+      document.getElementById('reviews-list').innerHTML = DATA.reviews
+        .map(
+          (r) => `
+        <blockquote class="rounded-3xl border border-line bg-paper p-6">
+          <p class="text-sm leading-relaxed">«${r.text}»</p>
+          <footer class="mt-4 text-sm">
+            <span class="font-medium">${r.author}</span>
+            <span class="text-muted"> · ${r.role}</span>
+          </footer>
+        </blockquote>`
+        )
+        .join('');
+
+      // Modal
+      function openProduct(key) {
+        active = findProduct(key);
+        photo = 0;
+        if (!active) return;
+        renderModal();
+        document.getElementById('modal').classList.remove('hidden');
+        document.getElementById('modal').classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        active = null;
+        document.getElementById('modal').classList.add('hidden');
+        document.getElementById('modal').classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      function renderModal() {
+        if (!active) return;
+        document.getElementById('modal-group').textContent = DATA.GROUP_LABEL[active.group];
+        document.getElementById('modal-name').textContent = active.name;
+        document.getElementById('modal-short').textContent = active.short;
+        document.getElementById('modal-price').textContent = active.price;
+        document.getElementById('modal-desc').textContent = active.description;
+        const img = document.getElementById('modal-img');
+        img.src = active.images[photo] || '';
+        img.alt = active.name;
+        img.className = 'h-full w-full ' + (active.group === 'tile' ? 'object-cover' : 'object-contain p-6');
+        const thumbs = document.getElementById('modal-thumbs');
+        if (active.images.length > 1) {
+          thumbs.innerHTML = active.images
+            .map(
+              (src, i) => `
+            <button type="button" data-photo="${i}" class="size-12 overflow-hidden rounded-lg border-2 ${i === photo ? 'border-copper' : 'border-transparent'}">
+              <img src="${src}" class="h-full w-full object-cover" />
+            </button>`
+            )
+            .join('');
+          thumbs.querySelectorAll('[data-photo]').forEach((btn) => {
+            btn.addEventListener('click', () => {
+              photo = +btn.dataset.photo;
+              renderModal();
+            });
+          });
+        } else thumbs.innerHTML = '';
+        let extra = '';
+        if (active.application) extra += `<p><span class="text-muted">Применение. </span>${active.application}</p>`;
+        if (active.packing) extra += `<p><span class="text-muted">Упаковка. </span>${active.packing}</p>`;
+        if (active.cert) extra += `<p><span class="text-muted">Сертификат. </span>${active.cert}</p>`;
+        document.getElementById('modal-extra').innerHTML = extra;
+        const specs = document.getElementById('modal-specs');
+        if (active.specs) {
+          specs.innerHTML = Object.entries(active.specs)
+            .map(
+              ([k, v]) => `
+            <div class="grid grid-cols-2 gap-3 py-2 text-sm">
+              <dt class="text-muted">${k}</dt>
+              <dd>${v}</dd>
+            </div>`
+            )
+            .join('');
+          specs.classList.remove('hidden');
+        } else {
+          specs.innerHTML = '';
+          specs.classList.add('hidden');
+        }
+        const inCart = keys.includes(active.key);
+        const toggle = document.getElementById('modal-toggle');
+        toggle.textContent = inCart ? 'Убрать из заявки' : 'Добавить в заявку';
+        toggle.onclick = () => toggleKey(active.key);
+        document.getElementById('modal-wa').href = waLink(
+          `Здравствуйте! Интересует ${active.name}. Подскажите цену и срок.`
+        );
+      }
+
+      document.getElementById('modal-close').addEventListener('click', closeModal);
+      document.getElementById('modal').addEventListener('click', (e) => {
+        if (e.target === document.getElementById('modal')) closeModal();
+      });
+
+      // Tray
+      function renderTrayBadge() {
+        const n = keys.length;
+        const desk = document.getElementById('tray-count-desktop');
+        const mob = document.getElementById('tray-count-mobile');
+        const btnMob = document.getElementById('btn-tray-mobile');
+        if (n > 0) {
+          desk.textContent = n;
+          desk.classList.remove('hidden');
+          mob.textContent = n;
+          btnMob.classList.remove('hidden');
+        } else {
+          desk.classList.add('hidden');
+          btnMob.classList.add('hidden');
+        }
+      }
+
+      function renderTray() {
+        const picked = keys.map(findProduct).filter(Boolean);
+        const list = document.getElementById('tray-list');
+        const empty = document.getElementById('tray-empty');
+        const wa = document.getElementById('tray-wa');
+        if (!picked.length) {
+          list.innerHTML = '';
+          empty.classList.remove('hidden');
+          wa.classList.add('hidden');
+          return;
+        }
+        empty.classList.add('hidden');
+        wa.classList.remove('hidden');
+        list.innerHTML = picked
+          .map(
+            (p) => `
+          <li class="flex items-center gap-3 rounded-2xl border border-line p-3">
+            <div class="size-14 shrink-0 overflow-hidden rounded-xl bg-sand">
+              <img src="${p.images[0] || ''}" class="h-full w-full object-cover" />
+            </div>
+            <div class="min-w-0 flex-1">
+              <p class="truncate font-medium">${p.name}</p>
+              <p class="text-xs text-muted">${DATA.GROUP_LABEL[p.group]}</p>
+            </div>
+            <button type="button" data-remove="${p.key}" class="text-sm text-muted hover:text-copper">Убрать</button>
+          </li>`
+          )
+          .join('');
+        list.querySelectorAll('[data-remove]').forEach((btn) => {
+          btn.addEventListener('click', () => toggleKey(btn.dataset.remove));
+        });
+        const names = picked.map((p) => p.name).join(', ');
+        wa.href = waLink(`Здравствуйте! Заявка с сайта «Торговый Путь». Позиции: ${names}. Подскажите наличие и цену.`);
+      }
+
+      function openTray() {
+        renderTray();
+        document.getElementById('tray').classList.remove('hidden');
+        document.getElementById('tray').classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeTray() {
+        document.getElementById('tray').classList.add('hidden');
+        document.getElementById('tray').classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+      document.getElementById('btn-tray-desktop').addEventListener('click', openTray);
+      document.getElementById('btn-tray-mobile').addEventListener('click', openTray);
+      document.getElementById('tray-close').addEventListener('click', closeTray);
+      document.getElementById('tray').addEventListener('click', (e) => {
+        if (e.target === document.getElementById('tray')) closeTray();
+      });
+
+      // Menu
+      const menu = document.getElementById('mobile-menu');
+      document.getElementById('btn-menu').addEventListener('click', () => {
+        menu.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      });
+      document.getElementById('btn-menu-close').addEventListener('click', () => {
+        menu.classList.add('hidden');
+        document.body.style.overflow = '';
+      });
+      document.querySelectorAll('[data-close-menu]').forEach((a) => {
+        a.addEventListener('click', () => {
+          menu.classList.add('hidden');
+          document.body.style.overflow = '';
+        });
+      });
+
+      // Search
+      document.getElementById('search').addEventListener('input', (e) => {
+        query = e.target.value;
+        renderProducts();
+      });
+
+      // Form
+      function updateFormPicked() {
+        const picked = keys.map(findProduct).filter(Boolean);
+        const el = document.getElementById('form-picked');
+        el.textContent = picked.length ? 'В заявке: ' + picked.map((p) => p.name).join(', ') : '';
+      }
+      document.getElementById('request-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const fd = new FormData(e.target);
+        const lines = [
+          'Здравствуйте! Заявка с сайта «Торговый Путь».',
+          `Имя: ${fd.get('name')}`,
+          `Телефон: ${fd.get('phone')}`,
+        ];
+        if (interest) lines.push(`Направление: ${interest}`);
+        const picked = keys.map(findProduct).filter(Boolean);
+        if (picked.length) lines.push(`Позиции: ${picked.map((p) => p.name).join(', ')}`);
+        const note = (fd.get('note') || '').trim();
+        if (note) lines.push(`Комментарий: ${note}`);
+        window.open(waLink(lines.join('\n')), '_blank');
+        document.getElementById('form-fields').classList.add('hidden');
+        document.getElementById('form-success').classList.remove('hidden');
+      });
+
+      // Escape
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeModal();
+          closeTray();
+          menu.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
+      });
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+      renderFilters();
+      renderProducts();
+      renderTrayBadge();
+      updateFormPicked();
+    })();
+  </script>
+</body>
+</html>
